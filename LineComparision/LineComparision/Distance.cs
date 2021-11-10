@@ -19,13 +19,22 @@ namespace LineComparision
             double result = Math.Sqrt(Math.Pow(this.xTwoPoint - this.xOnePoint, 2)) + Math.Sqrt(Math.Pow(this.yTwoPoint - this.yOnePoint, 2));
             return result;
         }
-        public void Equality(double lengthone , double lengthtwo)
+        public void CheckGreater(double lengthone , double lengthtwo)
         {
-            if(lengthone == lengthtwo)
+            if(lengthone > lengthtwo)
             {
-                Console.WriteLine("Two lines length are equal");
+                Console.WriteLine("The second line is lesser than first line");
+            }
+            else if(lengthone < lengthtwo)
+            {
+                Console.WriteLine("The second line is greater than first line");
+            }
+            else
+            {
+                Console.WriteLine("Two lines length are not equal");
             }
 
         }
+
     }
 }
