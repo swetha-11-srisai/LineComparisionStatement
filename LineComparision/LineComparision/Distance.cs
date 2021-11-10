@@ -19,5 +19,13 @@ namespace LineComparision
             double result = Math.Sqrt(Math.Pow(this.xTwoPoint - this.xOnePoint, 2)) + Math.Sqrt(Math.Pow(this.yTwoPoint - this.yOnePoint, 2));
             return result;
         }
+        public void Equality(double lengthone , double lengthtwo)
+        {
+            if(lengthone == lengthtwo)
+            {
+                Console.WriteLine("Two lines length are equal");
+            }
+
+        }
     }
 }
