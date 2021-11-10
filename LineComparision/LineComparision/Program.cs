@@ -14,7 +14,8 @@ namespace LineComparision
             double lengthtwo = pointone.CalculateLength();
             Console.WriteLine("length of second line is:" + lengthtwo);
             point.CalculateLength();
-            pointone.Equality(lengthone, lengthtwo);
+            pointone.CheckGreater(lengthone, lengthtwo);
+            Console.ReadLine();
         }
     }
 }
